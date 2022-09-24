@@ -3,6 +3,8 @@ from django.db import models
 
 
 class Photo(models.Model):
+    name = models.CharField(max_length=100, null=True, blank=True, verbose_name='Название')
+    description = models.TextField(max_length=2000, null=True, blank=True, verbose_name='Описание')
     photo = models.ImageField(upload_to='photos', verbose_name='Фото')
     note = models.CharField(max_length=100, verbose_name='Подпись')
     create_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
@@ -23,8 +25,7 @@ class Like(models.Model):
 
 class Comment(models.Model):
     text = models.TextField(max_length=500, verbose_name='Текст')
-    photo = models.ForeignKey('webapp.Photo', related_name='photo_comments', on_delete=models.CASCADE,
-                              verbose_name='Фото')
+    photo = models.ForeignKey('webapp.Photo', related_name='photo_comments', on_delete=models.CASCADE, verbose_name='Фото')
     author = models.ForeignKey(User, related_name='author_comments', on_delete=models.CASCADE, verbose_name='Автор')
     create_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
 
