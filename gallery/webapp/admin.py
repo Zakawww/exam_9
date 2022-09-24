@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Photo, Comment, Like
+from webapp.models import Photo, Comment, Like
 
 admin.site.register(Photo)
 admin.site.register(Comment)
