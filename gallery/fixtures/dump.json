@@ -1,0 +1,74 @@
+[
+{
+  "model": "webapp.photo",
+  "pk": 3,
+  "fields": {
+    "name": "Albomtest",
+    "description": "dsadasd",
+    "photo": "photos/ЛОГО_ЛАЙК.jpg",
+    "note": "wdadqw",
+    "create_at": "2022-09-24T11:27:54.622Z",
+    "author": 1,
+    "likes": 0
+  }
+},
+{
+  "model": "webapp.photo",
+  "pk": 4,
+  "fields": {
+    "name": "test",
+    "description": "wdqdaddwd",
+    "photo": "photos/logo-EnergoProm.png",
+    "note": "asdsadasd",
+    "create_at": "2022-09-24T11:33:19.240Z",
+    "author": 1,
+    "likes": 1
+  }
+},
+{
+  "model": "webapp.photo",
+  "pk": 5,
+  "fields": {
+    "name": "user1",
+    "description": "user1",
+    "photo": "photos/logo-gruzovichkof.png",
+    "note": "user",
+    "create_at": "2022-09-24T11:35:30.323Z",
+    "author": 2,
+    "likes": 1
+  }
+},
+{
+  "model": "webapp.photo",
+  "pk": 6,
+  "fields": {
+    "name": "user2",
+    "description": "user2",
+    "photo": "photos/logo-TTGES.png",
+    "note": "user",
+    "create_at": "2022-09-24T11:36:10.489Z",
+    "author": 3,
+    "likes": 3
+  }
+},
+{
+  "model": "webapp.comment",
+  "pk": 2,
+  "fields": {
+    "text": "comment",
+    "photo": 5,
+    "author": 2,
+    "create_at": "2022-09-24T11:35:44.921Z"
+  }
+},
+{
+  "model": "webapp.comment",
+  "pk": 3,
+  "fields": {
+    "text": "user2",
+    "photo": 6,
+    "author": 3,
+    "create_at": "2022-09-24T11:36:22.417Z"
+  }
+}
+]
