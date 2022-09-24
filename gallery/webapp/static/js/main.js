@@ -1,8 +1,6 @@
 function addComment(photo_pk) {
     const csrftoken = getCookie('csrftoken')
-    comment = $('#commentText').val(value)
-    // comment = document.getElementById('commentText').value
-    // console.log(comment)
+    comment = $('#commentText').val()
     $.ajax({
         url: 'http://localhost:8000/api/comments/',
         method: 'POST',
